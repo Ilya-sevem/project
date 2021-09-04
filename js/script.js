@@ -1,22 +1,17 @@
 "use strict";
 
-prompt("Сколько фильмов вы уже смотрели?","6");
-const numberOfFilms = prompt("Сколько фильмов вы уже смотрели?","6");
+const str = 'test';
+const arr = [1, 2, 3];
 
-const personalMuvieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	private: false
-};
+console.log(str.toUpperCase());
 
-const a = prompt("Один из последних просмотренных фильмов?", "Logan"),
-	b = prompt('На сколько оцените его?','8.1'),
-	c = prompt("Один из последних просмотренных фильмов?", "Logan"),
-	d = prompt('На сколько оцените его?','8.1');
+const fruit = 'Some fruit';
+console.log(fruit.indexOf('fruit'));
 
-personalMuvieDB.movies[a] = b;
-personalMuvieDB.movies[c] = d;
+const logg = 'Hello world';
+console.log(logg.slice(6, 12));
 
-console.log(personalMuvieDB);
+console.log(logg.substr(6, 5));
+
+const test = '12.4px';
+console.log(parseInt(test, 10));
